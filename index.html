@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI FOR INCREMENTIND AND DECREMENTING A NUMBER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--<h1>INCREMENT AND DECREMENT</h1>-->
+        <div>
+            <h2 id="root">
+            </h2>
+        </div>
+        <div class="card">
+
+            <br>
+            <br>
+            <br>
+            <button class="b1" onclick="increment()">Increase</button>&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <button class="b2" onclick="decrement()">Decrease</button>
+        </div>
+    </div>
+
+    <script>
+        var data = 0;
+        document.getElementById("root").innerText = data;
+
+        function increment() {
+            data = data + 1;
+            document.getElementById("root").innerText = data;
+        }
+
+        function decrement() {
+            data = data - 1;
+            document.getElementById("root").innerText = data;
+        }
+    </script>
+</body>
+
+</html>
